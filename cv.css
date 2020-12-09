@@ -1,0 +1,123 @@
+@font-face{
+	font-family: "roboto";
+	src:url("./roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+
+@font-face{
+	font-family: "roboto-Italic";
+	src:url("./roboto/Roboto-Italic.ttf") format("truetype");
+}
+
+
+body{
+	width: 1060px;
+	margin-right: auto;
+	margin-left: auto;
+
+	font-family: "roboto", Arial, sans-serif;
+	
+}
+
+header {
+	/*border: 5px solid green;*/
+	width: 1060px;
+	/*height: 400px; important*/
+	text-align: center;
+	color : blue;
+	height: 300px;
+
+	font-family: "roboto-Italic", Arial, sans-serif;
+
+	
+}
+
+.photo {
+	/*border: 1px solid red;*/
+	width: 300px;
+	height: 250px;
+	float: left;
+}
+
+.identite {
+	/*border: 1px solid red;*/
+	margin-left: 350px;
+	padding-top: 50px;
+}
+
+
+#gauche {
+/* article id=gauche */
+	float: left;
+	width: 350px;
+	/*border: 5px solid green;*/
+	border-right: 1px solid black;
+}
+
+#droite {
+/*article id=droite */
+	margin-left: 400px;
+	/*border: 5px solid green;*/	
+}
+
+section {
+	
+	/*border: 1px solid black;*/
+	margin: 10px;
+	padding: 10px;
+	
+}
+.retrait-gauche {
+	padding-left: 100px;
+	
+}
+
+.title {
+	color: blue;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	/*caractères écrits en majuscule */
+	
+
+
+	/* permet un trait avant et apres au niveau de chaque titres */
+    align-items: center;
+    /* centre verticalement les enfants entre eux */
+
+    display: flex;
+    /* active flexbox */
+
+    text-align: center;
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+}
+
+
+.title::before,
+.title::after {
+    
+    border-top: .0625em solid;
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+   
+    content: "";
+    /* nécessaire pour afficher les pseudo-éléments */
+    
+    flex: 1;
+    /* partage le reste de la largeur disponible */
+ 
+    margin: 0.5em;
+    /* espace les traits du texte */
+}
+
+
+.textgrey {
+	color: grey;
+}
+
+.lieu:hover {
+	color: red;
+}
+
+.lieu {
+	color : blue;
+}
